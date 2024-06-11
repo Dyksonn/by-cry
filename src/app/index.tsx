@@ -12,8 +12,6 @@ import Animated, {
   runOnJS,
 } from "react-native-reanimated"
 
-
-
 export default function Splash() {
   const logoScale = useSharedValue(1)
   const logoPositionY = useSharedValue(0)
