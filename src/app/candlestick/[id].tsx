@@ -27,7 +27,7 @@ export default function Candlestick() {
     }
 
     async function getTickerCandle() {
-        const candle = await client.candles({ symbol: id, interval: '1m', limit: 100 })
+        const candle = await client.candles({ symbol: id, interval: '1m', limit: 200 })
         setCandles(candle)
     }
 
