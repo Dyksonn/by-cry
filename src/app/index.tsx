@@ -83,7 +83,7 @@ export default function Splash() {
 
   function onEndSplash() {
     setTimeout(() => {
-      router.push("/(tabs)")
+      router.replace("/(tabs)")
     }, 2000)
   }
 

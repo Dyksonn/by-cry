@@ -1,4 +1,4 @@
-import { Slot } from "expo-router"
+import { Slot, Stack } from "expo-router"
 import { StatusBar } from "react-native"
 import { GestureHandlerRootView } from "react-native-gesture-handler"
 import * as SplashScreen from "expo-splash-screen"
@@ -28,7 +28,16 @@ export default function Layout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <StatusBar barStyle="light-content" />
-      {fontsLoaded && <Slot />}
+      {fontsLoaded && (
+        <>
+        <Stack screenOptions={{
+          headerShown: false,
+        }}>
+          <Stack.Screen name="(tabs)" />
+          <Stack.Screen name="candlestick/[id]" />
+        </Stack>
+        </>
+      )}
     </GestureHandlerRootView>
   )
 }

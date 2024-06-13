@@ -1,4 +1,4 @@
-import { useRef, useState } from "react"
+import { useRef } from "react"
 import { Tabs } from "expo-router"
 import BottomSheet from "@gorhom/bottom-sheet"
 import { Foundation, Ionicons, FontAwesome5 } from "@expo/vector-icons"
